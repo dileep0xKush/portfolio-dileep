@@ -2655,20 +2655,36 @@ hr {
     min-height: 1000px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover
+    background-size: cover;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .slider-height {
-        min-height: 700px
+        min-height: 700px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .slider-height {
-        min-height: 700px
+        background-image: url(../img/hero/hero2.jpg);
+        min-height: 1000px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
     }
 }
+
+/* New media query for screen width less than 746px */
+@media only screen and (max-width: 746px) {
+    .slider-height {
+        background-image: url(../img/hero/hero2.jpg);
+        min-height: 1000px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .slider-height {

@@ -6330,3 +6330,7 @@ del {
 .switch-wrap {
     margin-bottom: 10px
 }
+
+.hover-link:hover {
+    color: #151313;
+}

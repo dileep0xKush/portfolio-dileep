@@ -6352,9 +6352,7 @@ del {
 }
 
 .image-container {
-    position: relative;
-    width: 370px;
-    height: 370px;
+    border: 5px;
 }
 
 .view-button {

@@ -63,14 +63,6 @@
                                             <li><a href="services.html">Services</a></li>
                                             <li><a href="skills.html">Skills</a></li>
                                             <li><a href="portfolio.html">Portfolio</a></li>
-                                            <li><a href="#">Page</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog_details.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="portfolio_details.html">Portfolio Details</a></li>
-                                                </ul>
-                                            </li>
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </nav>
@@ -219,39 +211,123 @@
         <!-- Want To Work End -->
         <!-- Brand Area Start -->
         <div class="brand-area section-padding30">
+
             <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8 col-md-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle mb-70">
+                            <h2>Professional Journey: Full-Time & Freelance</h2>
+                        </div>
+                    </div>
+                </div>
                 <div class="brand-active brand-border pt-50 pb-40">
-                    <div class="single-brand">
-                        <img src="assets/img/aviansoft.png" alt="" width="200px">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/skyline.jpeg" alt="" width="200px">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/shamiit_logo.jpeg" alt="" width="100px" style="
-                        height: 67px;margin-left: 40px;">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/logo-Photoroom.png" alt="" width="100px" style="margin-top: -15px;">
+                    <div class="single-brand" style="position: relative; display: inline-block;">
+                        <div class="brand-overlay" style="position: relative;">
+                            <img src="assets/img/aviansoft.png" alt="Aviansoft" width="200px"
+                                style="transition: transform 0.3s ease;" />
+                            <div class="brand-name" style="
+                        position: absolute; bottom: 10px; left: 0; width: 100%;
+                        text-align: center; font-size: 16px; font-weight: bold; 
+                        color: white; background: rgba(0, 0, 0, 0.6); opacity: 0; 
+                        transition: opacity 0.3s ease;">
+                                Aviansoft private limited
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="single-brand">
-                        <img src="assets/img/skdreamcash.jpeg" alt="" width="100px" style="height: 70px; ">
+                    <div class="single-brand" style="position: relative; display: inline-block;">
+                        <div class="brand-overlay" style="position: relative;">
+                            <img src="assets/img/skyline.jpeg" alt="Skyline" width="200px"
+                                style="transition: transform 0.3s ease;" />
+                            <div class="brand-name" style="
+                        position: absolute; bottom: 10px; left: 0; width: 100%;
+                        text-align: center; font-size: 16px; font-weight: bold; 
+                        color: white; background: rgba(0, 0, 0, 0.6); opacity: 0; 
+                        transition: opacity 0.3s ease;">
+                                Skyline infosys
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-brand" style="position: relative; display: inline-block;">
+                        <div class="brand-overlay" style="position: relative;">
+                            <img src="assets/img/shamiit_logo.jpeg" alt="Shamiit" width="100px"
+                                style="height: 67px; margin-left: 40px; transition: transform 0.3s ease;" />
+                            <div class="brand-name" style="
+                        position: absolute; bottom: 10px; left: 0; width: 100%;
+                        text-align: center; font-size: 16px; font-weight: bold; 
+                        color: white; background: rgba(0, 0, 0, 0.6); opacity: 0; 
+                        transition: opacity 0.3s ease;">
+                                Shami Innovation and Technologies
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-brand" style="position: relative; display: inline-block;">
+                        <div class="brand-overlay" style="position: relative;">
+                            <img src="assets/img/logo-Photoroom.png" alt="Photoroom" width="100px"
+                                style="margin-top: -15px; transition: transform 0.3s ease;" />
+                            <div class="brand-name" style="
+                        position: absolute; bottom: 10px; left: 0; width: 100%;
+                        text-align: center; font-size: 16px; font-weight: bold; 
+                        color: white; background: rgba(0, 0, 0, 0.6); opacity: 0; 
+                        transition: opacity 0.3s ease;">
+                                Coding Community
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-brand" style="position: relative; display: inline-block;">
+                        <div class="brand-overlay" style="position: relative;">
+                            <img src="assets/img/skdreamcash.jpeg" alt="Skdreamcash" width="100px"
+                                style="height: 70px; transition: transform 0.3s ease;" />
+                            <div class="brand-name" style="
+                        position: absolute; bottom: 10px; left: 0; width: 100%;
+                        text-align: center; font-size: 16px; font-weight: bold; 
+                        color: white; background: rgba(0, 0, 0, 0.6); opacity: 0; 
+                        transition: opacity 0.3s ease;">
+                                Sk Dream Cash
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            const brandElements = document.querySelectorAll('.single-brand');
+
+            brandElements.forEach(element => {
+                const brandName = element.querySelector('.brand-name');
+                const image = element.querySelector('img');
+
+                element.addEventListener('mouseenter', () => {
+                    brandName.style.opacity = '1';
+                    image.style.transform = 'scale(1.1)';  // Optional zoom effect
+                });
+
+                element.addEventListener('mouseleave', () => {
+                    brandName.style.opacity = '0';
+                    image.style.transform = 'scale(1)';
+                });
+            });
+        </script>
+
+        <!-- Brand Area End -->
         <!-- Brand Area End -->
         <!-- Contact Info Start -->
-        <div class="contact-info-area w-padding2" data-background="assets/img/gallery/section_bg04.jpg">
+        <section class="contact-info-area w-padding2" data-background="assets/img/gallery/section_bg04.jpg">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-xl-5 col-lg-7">
                         <div class="contact-caption mb-50">
-                            <h3>If Not Now, When? Let’s Work Together!</h3>
-                            <p>Consectetur adipiscing elit, sed do eiusmod tempor ididunt ut labore et dolore magna
-                                aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra.</p>
-                            <img src="assets/img/gallery/sin.png" alt="">
+                            <h3>The Best Time is Now. Let's Create Something Incredible Together!
+                            </h3>
+                            <p>Let’s move forward together – your vision and our expertise can create something
+                                extraordinary. Whether it’s a new project, a fresh idea, or a unique challenge, we’re
+                                here to support you every step of the way. Don’t wait for the perfect moment, the time
+                                is now. Let's make it happen!</p>
+
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-5">
@@ -264,7 +340,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Contact Info End -->
 
     </main>

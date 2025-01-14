@@ -6375,3 +6375,20 @@ del {
     display: inline-block;
     opacity: 1;
 }
+
+
+
+@media (min-width: 1000px) {
+    #name {
+        margin-bottom: -10px;
+        display: ruby-text !important;
+    }
+}
+
+
+@media (min-width: 760px) {
+    #name {
+        margin-bottom: -10px;
+        display: ruby-text !important;
+    }
+}

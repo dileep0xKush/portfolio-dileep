@@ -665,7 +665,7 @@
 
                 element.addEventListener('mouseenter', () => {
                     brandName.style.opacity = '1';
-                    image.style.transform = 'scale(1.1)';  // Optional zoom effect
+                    image.style.transform = 'scale(1.1)'; // Optional zoom effect
                 });
 
                 element.addEventListener('mouseleave', () => {
@@ -691,15 +691,16 @@
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-5">
-                        <form action="#" class="contact-wrapper">
-                            <input type="text" name="name" placeholder="Full Name">
-                            <input type="email" name="email" placeholder="Email Address">
-                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                        <form action="https://formspree.io/f/mnnnwkkn" method="post" class="contact-wrapper">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
                             <button class="submit-btn2" type="submit">Send Message</button>
                         </form>
                     </div>
                 </div>
             </div>
+
         </section>
         <!-- Contact Info End -->
 
@@ -729,7 +730,9 @@
                             <div class="footer-copy-right">
                                 <p>
                                     &copy;
-                                    <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                    <script>
+                                        document.write(new Date().getFullYear());
+                                    </script> All rights reserved |
                                     Designed and Developed by <a href="#" target="_blank"
                                         rel="noopener noreferrer">Dileep Kushwaha</a>
                                 </p>

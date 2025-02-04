@@ -6392,3 +6392,16 @@ del {
         display: ruby-text !important;
     }
 }
+
+.preloader-text {
+    font-size: 40px;
+    /* Adjust size as needed */
+    font-weight: bold;
+    color: #000;
+    /* Change color as desired */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* Adjust letter spacing as needed */
+    font-family: Arial, sans-serif;
+    /* Adjust the font family */
+}
